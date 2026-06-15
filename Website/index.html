@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>Ansh Dewangan's Web Page</title>
+            <link rel="icon" href="Images/Ansh_Pic.png" type="image/png">
+    </head>
+
+    <body>
+        <h1>Welcome to Ansh Website</h1>
+
+        <p>
+            This is a sample web page created by <u><b>Ansh</b></u>. It contains various HTML elements such as headings, paragraphs, and preformatted text.
+        </p>
+        
+        <hr>
+
+        <a href="mailto:myanshdew@gmail.com">
+            <h1>Email Ansh Dewangan</h1>
+        </a>
+
+        <hr>
+
+        <h1>Ansh's School Picture</h1>
+
+
+        <a 
+        href="https://www.opjsrgh.in"
+        title="OPJS School Website"
+        target="_blank">
+        <img src="Images/Ansh_School.png"
+        alt="Ansh's School Picture"
+        height="300"
+        width="500">
+        </a>
+
+        <hr>
+
+        <a 
+        title="Teacher Teaching Complex stuff even idk lol also congratulation you found an easter egg"
+        target="_blank">
+        <img src="Gif/teaching_gif.gif"
+        height="300"
+        width="500"
+        alt="Teacher Teaching">
+        </a>
+
+        <hr>
+
+        <h2>Background Music</h2>
+
+       <button title ="Music start at 5% volume"id="playButton" onclick="playMusic()">Play Music</button>
+
+        <audio id="music" loop>
+            <source src="Audio/Freestyle.mp3">
+        </audio>
+
+        <script>
+            function playMusic() {
+             const music = document.getElementById("music");
+             music.volume = 0.05;
+             music.play();
+             alert("Enjoy the music! 🎶, Default volume set to 5%");
+             document.getElementById("playButton").style.display = "none";
+             document.getElementById("StopMusic").style.display = "inline-block";
+             document.getElementById("Volume5").style.display = "none";
+             document.getElementById("Volume50").style.display = "inline-block";
+             document.getElementById("Volume100").style.display = "inline-block";
+            }
+        </script>
+
+
+        <button id="StopMusic" style="display: none;" onclick="stopMusic()">Stop Music</button>
+
+        <script>
+            function stopMusic() {
+                const music = document.getElementById("music");
+                music.pause();
+                alert("Music stopped! 🎵");
+                document.getElementById("playButton").style.display = "inline-block";
+                document.getElementById("StopMusic").style.display = "none";
+                document.getElementById("Volume5").style.display = "none";
+                document.getElementById("Volume50").style.display = "none";
+                document.getElementById("Volume100").style.display = "none";
+            }
+        </script>
+
+        <button id="Volume5" style="display: none;" onclick="Volume5()">Volume 5%</button>
+
+        <script>
+            function Volume5() {
+                const music = document.getElementById("music");
+                music.volume = 0.05;
+                alert("Volume set to 5%! 🎵");
+                document.getElementById("Volume5").style.display = "none";
+                document.getElementById("Volume50").style.display = "inline-block";
+                document.getElementById("Volume100").style.display = "inline-block";
+            }
+        </script>
+
+        <button id="Volume50" style="display: none;" onclick="Volume50()">Volume 50%</button>
+
+        <script>
+            function Volume50() {
+                const music = document.getElementById("music");
+                music.volume = 0.5;
+                alert("Volume set to 50%! 🎵");
+                document.getElementById("Volume5").style.display = "inline-block";
+                document.getElementById("Volume50").style.display = "none";
+                document.getElementById("Volume100").style.display = "inline-block";
+            }
+        </script>
+
+        <button id="Volume100" style="display: none;" onclick="Volume100()">Volume 100%</button>
+
+        <script>
+            function Volume100() {
+                const music = document.getElementById("music");
+                music.volume = 1.0;
+                alert("Volume set to 100%! 🎵");
+                document.getElementById("Volume5").style.display = "inline-block";
+                document.getElementById("Volume50").style.display = "inline-block";
+                document.getElementById("Volume100").style.display = "none";
+            }
+        </script>
+
+        <hr>
+        <h3>
+            Click the button below to watch a surprise video! 🎥
+        </h3>
+        <a alt="Surprise Video" 
+        title="Surprise Video">
+        <video width="500" height="300" controls >
+            <source src="Videos/rickroll.mp4" type="video/mp4">
+        </video>
+        </a>
+
+        <hr>
+
+        <h1><u>Class Information</u></h1>
+
+        <table border="3" style="background-color: gray;">
+            <tr>
+                <th align="center" width="150" style="background-color: lightgray;">Class</th>
+                <th align="center" width="150" style="background-color: lightgray;">Section</th>
+                <th align="center" width="150" style="background-color: lightgray;">Subject Combination</th>
+            </tr>
+            <tr>
+                <td align="center" style="background-color: rgb(239, 239, 239);">12th</td>
+                <td align="center" style="background-color: rgb(239, 239, 239);">D</td>
+                <td align="center" style="background-color: rgb(239, 239, 239);">PCM + Eng + AI</td>
+            </tr>
+        </table>
+
+        <br>
+
+        <hr>
+
+        <h1><u>Ansh favorite Subjects</u></h1>
+
+        <hr>
+
+        <ul
+        style = "background-color: aquamarine;
+        border: 2px solid rgb(87, 16, 239);">
+            <li><big>Mathematics</big></li>
+            <li><big>Physics</big></li>
+            <li><big>Organic Chemistry</big></li>
+        </ul>
+
+        <hr>
+
+        <a href="https://www.opjsrgh.in/Content/school-timing.pdf" 
+        target="_blank">
+        <button  
+        title="OPJS School Timing" onclick="alert('You will be redirected to the OPJS School Timing PDF!')"
+        href="https://www.opjsrgh.in/Content/school-timing.pdf";
+        style="background-color:rgb(237, 237, 237);
+        font-size: 25px;
+        color:rgb(31, 31, 31);
+        border: 4px solid rgb(0, 0, 0);
+        border-radius: 50px;">
+        Ansh School Timing
+        </button>
+        </a>
+
+        <hr>
+
+        <h2><u><big><div style="background-color: rgb(228, 122, 218);" align="center">The End</div></big></u></h2>
+        <hr>
+        <pre><i>
+        <u><big><b><mark style="background-color: lightgreen;">Thank you for visiting Ansh's website!</mark></b></big></u>
+        <span style="background-color: rgb(119, 253, 249);">We hope you enjoyed exploring the content and learning more about Ansh.</span>
+        <span style="background-color: rgb(119, 253, 249);">Feel free to reach out via email or check out the school website for more information.</span>
+        </i>
+        </pre>
+
+        <hr>
+
+        <h2>
+            Have a great day! 😊
+        </h2>
+
+        <img src="Images/Ashutosh.jpg"
+        height="400">
+        
+
+
+
+    </body>
+
+</html>
