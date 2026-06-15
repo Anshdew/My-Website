@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My First Website</title>
+
+  <style>
+    body{
+      margin:0;
+      font-family:Arial, sans-serif;
+      background:#0f172a;
+      color:white;
+      text-align:center;
+    }
+
+    .container{
+      padding:50px 20px;
+    }
+
+    h1{
+      font-size:50px;
+      color:#38bdf8;
+    }
+
+    p{
+      font-size:20px;
+      color:#cbd5e1;
+    }
+
+    button{
+      padding:15px 30px;
+      font-size:18px;
+      border:none;
+      border-radius:10px;
+      background:#38bdf8;
+      color:black;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    button:hover{
+      background:white;
+      transform:scale(1.05);
+    }
+
+    .box{
+      margin-top:40px;
+      padding:20px;
+      background:#1e293b;
+      border-radius:15px;
+      width:300px;
+      margin-left:auto;
+      margin-right:auto;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <h1>Hello World 👋</h1>
+
+    <p>I started coding 1 hour ago 🚀</p>
+
+    <button onclick="showMessage()">
+      Click Me
+    </button>
+
+    <div class="box">
+      <h2>My Goals</h2>
+      <p>✔ Learn HTML</p>
+      <p>✔ Learn CSS</p>
+      <p>✔ Become Developer</p>
+    </div>
+
+  </div>
+
+  <script>
+    function showMessage(){
+      alert("OMG YOU ARE NOW A PROGRAMMER 😎");
+    }
+  </script>
+
+</body>
+</html>
